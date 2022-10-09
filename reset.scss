@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+@mixin btn{
+  padding: 10px 3px;
+  background: transparent;
+  border-radius: 10px;
+  border: 2px solid white;
+  color: white;
+  font-size: 20px;
+  transition: .4s;
+  &:hover{
+    transform: scale(1.1);
+    background: red;
+    border: 2px solid red;
+  }
+}
+
+@mixin align{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin sw {
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+}
